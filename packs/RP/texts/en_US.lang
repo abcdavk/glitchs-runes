@@ -1,0 +1,45 @@
+item.runes:aqua=Aqua Rune
+item.runes:blank=Blank Rune
+item.runes:blood=Blood Rune
+item.runes:crystal=Crystal Rune
+item.runes:electricity=Electricity Rune
+item.runes:energy=Energy Rune
+item.runes:flame=Flame Rune
+item.runes:frost=Frost Rune
+item.runes:fungus=Fungus Rune
+item.runes:gravity=Gravity Rune
+item.runes:luminescence=Luminescence Rune
+item.runes:magma=Magma Rune
+item.runes:metal=Metal Rune
+item.runes:nova=Nova Rune
+item.runes:plant=Plant Rune
+item.runes:sand=Sand Rune
+item.runes:shadow=Shadow Rune
+item.runes:silk=Silk Rune
+item.runes:smoke=Smoke Rune
+item.runes:soul=Soul Rune
+item.runes:sound=Sound Rune
+item.runes:stone=Stone Rune
+item.runes:time=Time Rune
+item.runes:venom=Venom Rune
+item.runes:wind=Wind Rune
+
+item.spawn_egg.entity.runes:wind_cloud.name=Spawn Wind Cloud
+entity.runes:wind_cloud.name=Wind Cloud
+
+item.runes_weapons:energy_sword=Energy Sword
+item.runes_weapons:energy_bow=Energy Bow
+item.runes_weapons:energy_totem=Energy Totem
+
+item.weapons:crescent_rose=Crescent Rose
+
+item.spawn_egg.entity.runes:fungus_mushroom.name=Spawn Fungus Mushroom
+entity.runes:fungus_mushroom.name=Fungus Mushroom
+
+item.spawn_egg.entity.runes:nova_blue.name=Spawn Nova Blue
+entity.runes:nova_blue.name=Nova Blue
+item.spawn_egg.entity.runes:nova_orange.name=Spawn Nova Orange
+entity.runes:nova_orange.name=Nova Orange
+
+action.hint.exit.runes:wind_cloud=Sneak or crouch to dismount
+action.hint.exit.runes:sound_cloud=Sneak or crouch to dismount

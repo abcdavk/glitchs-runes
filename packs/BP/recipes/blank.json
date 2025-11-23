@@ -1,0 +1,31 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "crafting:recipe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"#C#",
+			"CNC",
+			"#C#"
+		],
+		"key": {
+			"#": {
+				"item": "minecraft:obsidian"
+			},
+			"C": {
+				"item": "minecraft:cobblestone"
+			},
+			"N": {
+				"item": "minecraft:nether_star"
+			}
+		},
+		"result": {
+			"item": "runes:blank",
+			"count": 1
+		}
+	}
+}

@@ -1,0 +1,49 @@
+{
+	"format_version": "1.21.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "weapons:crescent_rose",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.sword"
+			}
+		},
+		"components": {
+			"minecraft:can_destroy_in_creative": false,
+			"minecraft:damage": 10,
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": "minecraft:web",
+						"speed": 15
+					},
+					{
+						"block": "minecraft:bamboo",
+						"speed": 60
+					}
+				]
+			},
+			"minecraft:hand_equipped": true,
+			"minecraft:enchantable": {
+				"slot": "sword",
+				"value": 10
+			},
+			"minecraft:icon": "weapons:crescent_rose",
+			"minecraft:max_stack_size": 1,
+			"minecraft:cooldown": {
+				"category": "crescent_rose_ability",
+				"duration": 1
+			},
+			"minecraft:custom_components": [
+				"weapons:crescent_rose"
+			],
+			"minecraft:tags": {
+				"tags": [
+					"minecraft:is_sword",
+					"minecraft:is_tool"
+				]
+			}
+		}
+	}
+}

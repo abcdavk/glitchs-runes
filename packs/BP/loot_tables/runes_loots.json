@@ -1,0 +1,132 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 1,
+                "max": 1
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "runes:aqua",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "runes:blood",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "runes:crystal", 
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "runes:electricity",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "runes:energy", 
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "runes:flame",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "runes:frost",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "runes:fungus", 
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "runes:gravity",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "runes:luminescence",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "runes:magma",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "runes:metal",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "runes:nova", 
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "runes:plant",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "runes:sand",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "runes:shadow",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "runes:silk", 
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "runes:smoke", 
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "runes:soul",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "runes:sound", 
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "runes:stone",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "runes:time", 
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "runes:venom",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "name": "runes:wind",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

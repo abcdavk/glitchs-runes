@@ -1,0 +1,24 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "runes_weapons:energy_bow",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.sword"
+			}
+		},
+		"components": {
+			"minecraft:icon": "runes_weapons:energy_bow",
+			"minecraft:frame_count": 3,
+			"minecraft:use_animation": "bow",
+			"minecraft:use_modifiers": {
+				"use_duration": 9999,
+				"movement_modifier": 0.4
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:glint": false,
+			"minecraft:hand_equipped": true
+		}
+	}
+}

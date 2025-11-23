@@ -1,0 +1,627 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "minecraft:player",
+			"spawn_category": "creature",
+			"is_spawnable": false,
+			"is_summonable": false
+		},
+		"component_groups": {
+			"minecraft:add_raid_omen": {
+				"minecraft:spell_effects": {
+					"add_effects": [
+						{
+							"effect": "raid_omen",
+							"duration": 30,
+							"display_on_screen_animation": true
+						}
+					],
+					"remove_effects": "bad_omen"
+				},
+				"minecraft:timer": {
+					"time": [
+						0,
+						0
+					],
+					"looping": false,
+					"time_down_event": {
+						"event": "minecraft:clear_add_raid_omen",
+						"target": "self"
+					}
+				}
+			},
+			"minecraft:clear_raid_omen_spell_effect": {
+				"minecraft:spell_effects": {}
+			},
+			"minecraft:raid_trigger": {
+				"minecraft:raid_trigger": {
+					"triggered_event": {
+						"event": "minecraft:remove_raid_trigger",
+						"target": "self"
+					}
+				}
+			},
+			"minecraft:default_player": {
+				"minecraft:experience_reward": {
+					"on_death": "math.min(query.player_level*7,100)"
+				},
+				"minecraft:type_family": {
+					"family": [
+						"player"
+					]
+				},
+				"minecraft:health": {
+					"value": 20,
+					"max": 20
+				},
+				"minecraft:is_hidden_when_invisible": {},
+				"minecraft:loot": {
+					"table": "loot_tables/empty.json"
+				},
+				"minecraft:collision_box": {
+					"width": 0.6,
+					"height": 1.8
+				},
+				"minecraft:can_climb": {},
+				"minecraft:movement": {
+					"value": 0.1
+				},
+				"minecraft:hurt_on_condition": {
+					"damage_conditions": [
+						{
+							"filters": {
+								"test": "in_lava",
+								"subject": "self",
+								"operator": "==",
+								"value": true
+							},
+							"cause": "lava",
+							"damage_per_tick": 4
+						}
+					]
+				},
+				"minecraft:attack": {
+					"damage": 1
+				},
+				"minecraft:exhaustion_values": {
+					"heal": 6,
+					"jump": 0.05,
+					"sprint_jump": 0.2,
+					"mine": 0.005,
+					"attack": 0.1,
+					"damage": 0.1,
+					"walk": 0,
+					"sprint": 0.1,
+					"swim": 0.01
+				},
+				"minecraft:player.saturation": {
+					"value": 5,
+					"max": 20
+				},
+				"minecraft:player.exhaustion": {
+					"value": 0,
+					"max": 20
+				},
+				"minecraft:player.level": {
+					"value": 0,
+					"max": 24791
+				},
+				"minecraft:player.experience": {
+					"value": 0,
+					"max": 1
+				},
+				"minecraft:breathable": {
+					"total_supply": 15,
+					"suffocate_time": -1,
+					"inhale_time": 3.75,
+					"generates_bubbles": false
+				},
+				"minecraft:nameable": {
+					"always_show": true,
+					"allow_name_tag_renaming": false
+				},
+				"minecraft:physics": {
+					"push_towards_closest_space": true
+				},
+				"minecraft:pushable": {
+					"is_pushable": false,
+					"is_pushable_by_piston": true
+				},
+				"minecraft:insomnia": {
+					"days_until_insomnia": 3
+				},
+				"minecraft:rideable": {
+					"seat_count": 2,
+					"family_types": [
+						"parrot_tame"
+					],
+					"pull_in_entities": true,
+					"seats": [
+						{
+							"position": [
+								0.4,
+								-0.2,
+								-0.1
+							],
+							"min_rider_count": 0,
+							"max_rider_count": 0,
+							"lock_rider_rotation": 0
+						},
+						{
+							"position": [
+								-0.4,
+								-0.2,
+								-0.1
+							],
+							"min_rider_count": 1,
+							"max_rider_count": 2,
+							"lock_rider_rotation": 0
+						}
+					]
+				},
+				"minecraft:conditional_bandwidth_optimization": {},
+				"minecraft:block_climber": {},
+				"minecraft:environment_sensor": {
+					"triggers": {
+						"filters": {
+							"all_of": [
+								{
+									"test": "has_mob_effect",
+									"subject": "self",
+									"value": "bad_omen"
+								},
+								{
+									"test": "is_in_village",
+									"subject": "self",
+									"value": true
+								}
+							]
+						},
+						"event": "minecraft:gain_raid_omen"
+					}
+				}
+			},
+			"runes:aqua": {
+				"minecraft:attack": {
+					"damage": 2
+				}
+			},
+			"runes:blood": {
+				"minecraft:attack": {
+					"damage": 2
+				}
+			},
+			"runes:crystal": {
+				"minecraft:attack": {
+					"damage": 4.5
+				}
+			},
+			"runes:electricity": {
+				"minecraft:attack": {
+					"damage": 2
+				}
+			},
+			"runes:energy": {
+				"minecraft:attack": {
+					"damage": 1
+				}
+			},
+			"runes:flame": {
+				"minecraft:attack": {
+					"damage": 1.5
+				}
+			},
+			"runes:frost": {
+				"minecraft:attack": {
+					"damage": 3
+				}
+			},
+			"runes:fungus": {
+				"minecraft:attack": {
+					"damage": 3
+				}
+			},
+			"runes:gravity": {
+				"minecraft:attack": {
+					"damage": 2
+				},
+				"minecraft:damage_sensor": {
+					"triggers": {
+						"cause": "fall",
+						"deals_damage": false
+					}
+				}
+			},
+			"runes:luminescence": {
+				"minecraft:attack": {
+					"damage": 3
+				}
+			},
+			"runes:magma": {
+				"minecraft:attack": {
+					"damage": 5
+				}
+			},
+			"runes:metal": {
+				"minecraft:attack": {
+					"damage": 5
+				}
+			},
+			"runes:nova": {
+				"minecraft:attack": {
+					"damage": 2
+				},
+				"minecraft:damage_sensor": {
+					"triggers": {
+						"cause": "fall",
+						"deals_damage": false
+					}
+				}
+			},
+			"runes:plant": {
+				"minecraft:attack": {
+					"damage": 4
+				}
+			},
+			"runes:sand": {
+				"minecraft:attack": {
+					"damage": 3
+				}
+			},
+			"runes:shadow": {
+				"minecraft:attack": {
+					"damage": 3
+				},
+				"minecraft:type_family": {
+					"family": [
+						"player",
+						"warden"
+					]
+				}
+			},
+			"runes:silk": {
+				"minecraft:attack": {
+					"damage": 2
+				}
+			},
+			"runes:smoke": {
+				"minecraft:attack": {
+					"damage": 1
+				},
+				"minecraft:damage_sensor": {
+					"triggers": {
+						"cause": "fall",
+						"deals_damage": false
+					}
+				}
+			},
+			"runes:soul": {
+				"minecraft:attack": {
+					"damage": 3.5
+				},
+				"minecraft:type_family": {
+					"family": [
+						"undead",
+						"monster",
+						"mob"
+					]
+				}
+			},
+			"runes:sound": {
+				"minecraft:attack": {
+					"damage": 3
+				}
+			},
+			"runes:stone": {
+				"minecraft:attack": {
+					"damage": 4.5
+				}
+			},
+			"runes:time": {
+				"minecraft:attack": {
+					"damage": 1
+				}
+			},
+			"runes:venom": {
+				"minecraft:attack": {
+					"damage": 4.5
+				}
+			},
+			"runes:wind": {
+				"minecraft:attack": {
+					"damage": 1
+				},
+				"minecraft:type_family": {
+					"family": [
+						"player",
+						"player_wind"
+					]
+				}
+			},
+			"armor:grand_widow": {
+				"minecraft:damage_sensor": {
+					"triggers": {
+						"cause": "fall",
+						"deals_damage": false
+					}
+				}
+			},
+			"armor:molten_knight": {
+				"minecraft:damage_sensor": {
+					"triggers": {
+						"cause": "fall",
+						"deals_damage": false
+					}
+				}
+			}
+		},
+		"components": {},
+		"events": {
+			"minecraft:gain_raid_omen": {
+				"add": {
+					"component_groups": [
+						"minecraft:add_raid_omen"
+					]
+				}
+			},
+			"minecraft:clear_add_raid_omen": {
+				"remove": {
+					"component_groups": [
+						"minecraft:add_raid_omen"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:clear_raid_omen_spell_effect"
+					]
+				}
+			},
+			"minecraft:trigger_raid": {
+				"add": {
+					"component_groups": [
+						"minecraft:raid_trigger"
+					]
+				}
+			},
+			"minecraft:remove_raid_trigger": {
+				"remove": {
+					"component_groups": [
+						"minecraft:raid_trigger"
+					]
+				}
+			},
+			"runes:default": {
+				"remove": {
+					"component_groups": [
+						"runes:aqua",
+						"runes:blood",
+						"runes:crystal",
+						"runes:electricity",
+						"runes:energy",
+						"runes:flame",
+						"runes:frost",
+						"runes:fungus",
+						"runes:gravity",
+						"runes:luminescence",
+						"runes:magma",
+						"runes:metal",
+						"runes:nova",
+						"runes:plant",
+						"runes:sand",
+						"runes:shadow",
+						"runes:silk",
+						"runes:smoke",
+						"runes:soul",
+						"runes:sound",
+						"runes:stone",
+						"runes:time",
+						"runes:venom",
+						"runes:wind"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:default_player"
+					]
+				}
+			},
+			"runes:add_aqua": {
+				"add": {
+					"component_groups": [
+						"runes:aqua"
+					]
+				}
+			},
+			"runes:add_blood": {
+				"add": {
+					"component_groups": [
+						"runes:blood"
+					]
+				}
+			},
+			"runes:add_crystal": {
+				"add": {
+					"component_groups": [
+						"runes:crystal"
+					]
+				}
+			},
+			"runes:add_electricity": {
+				"add": {
+					"component_groups": [
+						"runes:electricity"
+					]
+				}
+			},
+			"runes:add_energy": {
+				"add": {
+					"component_groups": [
+						"runes:energy"
+					]
+				}
+			},
+			"runes:add_flame": {
+				"add": {
+					"component_groups": [
+						"runes:flame"
+					]
+				}
+			},
+			"runes:add_frost": {
+				"add": {
+					"component_groups": [
+						"runes:frost"
+					]
+				}
+			},
+			"runes:add_fungus": {
+				"add": {
+					"component_groups": [
+						"runes:fungus"
+					]
+				}
+			},
+			"runes:add_gravity": {
+				"add": {
+					"component_groups": [
+						"runes:gravity"
+					]
+				}
+			},
+			"runes:add_luminescence": {
+				"add": {
+					"component_groups": [
+						"runes:luminescence"
+					]
+				}
+			},
+			"runes:add_magma": {
+				"add": {
+					"component_groups": [
+						"runes:magma"
+					]
+				}
+			},
+			"runes:add_metal": {
+				"add": {
+					"component_groups": [
+						"runes:metal"
+					]
+				}
+			},
+			"runes:add_nova": {
+				"add": {
+					"component_groups": [
+						"runes:nova"
+					]
+				}
+			},
+			"runes:add_plant": {
+				"add": {
+					"component_groups": [
+						"runes:plant"
+					]
+				}
+			},
+			"runes:add_sand": {
+				"add": {
+					"component_groups": [
+						"runes:sand"
+					]
+				}
+			},
+			"runes:add_shadow": {
+				"add": {
+					"component_groups": [
+						"runes:shadow"
+					]
+				}
+			},
+			"runes:add_silk": {
+				"add": {
+					"component_groups": [
+						"runes:silk"
+					]
+				}
+			},
+			"runes:add_smoke": {
+				"add": {
+					"component_groups": [
+						"runes:smoke"
+					]
+				}
+			},
+			"runes:add_soul": {
+				"add": {
+					"component_groups": [
+						"runes:soul"
+					]
+				}
+			},
+			"runes:add_sound": {
+				"add": {
+					"component_groups": [
+						"runes:sound"
+					]
+				}
+			},
+			"runes:add_stone": {
+				"add": {
+					"component_groups": [
+						"runes:stone"
+					]
+				}
+			},
+			"runes:add_time": {
+				"add": {
+					"component_groups": [
+						"runes:time"
+					]
+				}
+			},
+			"runes:add_venom": {
+				"add": {
+					"component_groups": [
+						"runes:venom"
+					]
+				}
+			},
+			"runes:add_wind": {
+				"add": {
+					"component_groups": [
+						"runes:wind"
+					]
+				}
+			},
+			"armor:add_grand_widow": {
+				"add": {
+					"component_groups": [
+						"armor:grand_widow"
+					]
+				}
+			},
+			"armor:remove_grand_widow": {
+				"remove": {
+					"component_groups": [
+						"armor:grand_widow"
+					]
+				}
+			},
+			"armor:add_molten_knight": {
+				"add": {
+					"component_groups": [
+						"armor:molten_knight"
+					]
+				}
+			},
+			"armor:remove_molten_knight": {
+				"remove": {
+					"component_groups": [
+						"armor:molten_knight"
+					]
+				}
+			}
+		}
+	}
+}

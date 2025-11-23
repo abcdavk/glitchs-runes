@@ -1,0 +1,55 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "runes:sound_cloud",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {},
+		"components": {
+			"minecraft:rideable": {
+				"seat_count": 2,
+				"controlling_seat": 0,
+				"seats": [
+					{
+						"min_rider_count": 1,
+						"position": [
+							0,
+							0,
+							0
+						]
+					},
+					{
+						"position": [
+							0,
+							0,
+							-0.7
+						]
+					}
+				],
+				"interact_text": "Fly"
+			},
+			"minecraft:movement": {
+				"value": 1
+			},
+			"minecraft:can_power_jump": {},
+			"minecraft:horse.jump_strength": {
+				"value": {
+					"range_min": 0,
+					"range_max": 0
+				}
+			},
+			"minecraft:collision_box": {
+				"height": 1,
+				"width": 1
+			},
+			"minecraft:input_ground_controlled": {},
+			"minecraft:physics": {
+				"has_gravity": true
+			}
+		},
+		"events": {}
+	}
+}

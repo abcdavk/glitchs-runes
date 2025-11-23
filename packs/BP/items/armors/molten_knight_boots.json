@@ -1,0 +1,23 @@
+{
+	"format_version": "1.21.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "armor:molten_knight_boots",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.boots"
+			}
+		},
+		"components": {
+			"minecraft:icon": "armor:molten_knight_boots",
+			"minecraft:display_name": {
+				"value": "Molten Knight Boots"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:wearable": {
+				"slot": "slot.armor.feet",
+				"protection": 3
+			}
+		}
+	}
+}

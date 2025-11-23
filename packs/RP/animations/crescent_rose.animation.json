@@ -1,0 +1,39 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.crescent_rose.hold1st": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						28.12275,
+						-3.345,
+						-131.38224
+					],
+					"position": [
+						-4,
+						14,
+						0
+					]
+				}
+			}
+		},
+		"animation.crescent_rose.hold3rd": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [
+						90,
+						-47.5,
+						-90
+					],
+					"position": [
+						0,
+						17,
+						-6
+					]
+				}
+			}
+		}
+	}
+}

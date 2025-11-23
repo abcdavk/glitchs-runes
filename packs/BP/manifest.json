@@ -1,0 +1,59 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Paoeni"
+		]
+	},
+	"header": {
+		"name": "Glitch's Runes v3",
+		"description": "Glitch's Runes by Paoeni",
+		"min_engine_version": [
+			1,
+			21,
+			0
+		],
+		"uuid": "254ee249-61a9-40f5-8f3d-8578e17f1889",
+		"version": [
+			1,
+			0,
+			9
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "0bc9a336-43af-48d0-80cf-03d28d2b5489",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"type": "script",
+			"entry": "scripts/main.js",
+			"language": "javascript",
+			"uuid": "0397686b-8f28-4684-b04e-1dcd8cd7f5a2",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "745a0d33-25ab-4aa8-9524-d2aca376dd7f",
+			"version": [
+				1,
+				0,
+				9
+			]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.17.0"
+		}
+	]
+}

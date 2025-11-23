@@ -1,0 +1,44 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Paoeni"
+		]
+	},
+	"header": {
+		"name": "Glitch's Runes v3",
+		"description": "Glitch's Runes by Paoeni",
+		"min_engine_version": [
+			1,
+			21,
+			0
+		],
+		"uuid": "745a0d33-25ab-4aa8-9524-d2aca376dd7f",
+		"version": [
+			1,
+			0,
+			9
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "a621c95c-5915-4aa3-b6a1-9ea5ff7cac65",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "254ee249-61a9-40f5-8f3d-8578e17f1889",
+			"version": [
+				1,
+				0,
+				9
+			]
+		}
+	]
+}

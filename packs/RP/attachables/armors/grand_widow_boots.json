@@ -1,0 +1,27 @@
+{
+	"format_version": "1.21.50",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "armor:grand_widow_boots",
+			"materials": {
+				"default": "armor",
+				"enchanted": "armor_enchanted"
+			},
+			"textures": {
+				"default": "textures/armors/mansion_boots",
+				"enchanted": "textures/misc/enchanted_actor_glint"
+			},
+			"geometry": {
+				"default": "geometry.mansion_boots"
+			},
+			"scripts": {
+				"pre_animation": [
+					"v.feet_layer_visible = 0.0;"
+				]
+			},
+			"render_controllers": [
+				"controller.render.armor"
+			]
+		}
+	}
+}

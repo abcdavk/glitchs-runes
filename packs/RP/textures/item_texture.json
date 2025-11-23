@@ -1,0 +1,117 @@
+{
+	"resource_pack_name": "Glitch's Runes",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"runes:aqua": {
+			"textures": "textures/items/runes/aqua_rune"
+		},
+		"runes:blank": {
+			"textures": "textures/items/runes/blank_rune"
+		},
+		"runes:blood": {
+			"textures": "textures/items/runes/blood_rune"
+		},
+		"runes:crystal": {
+			"textures": "textures/items/runes/crystal_rune"
+		},
+		"runes:electricity": {
+			"textures": "textures/items/runes/electricity_rune"
+		},
+		"runes:energy": {
+			"textures": "textures/items/runes/energy_rune"
+		},
+		"runes:flame": {
+			"textures": "textures/items/runes/flame_rune"
+		},
+		"runes:frost": {
+			"textures": "textures/items/runes/frost_rune"
+		},
+		"runes:fungus": {
+			"textures": "textures/items/runes/fungus_rune"
+		},
+		"runes:gravity": {
+			"textures": "textures/items/runes/gravity_rune"
+		},
+		"runes:luminescence": {
+			"textures": "textures/items/runes/luminescence_rune"
+		},
+		"runes:magma": {
+			"textures": "textures/items/runes/magma_rune"
+		},
+		"runes:metal": {
+			"textures": "textures/items/runes/metal_rune"
+		},
+		"runes:nova": {
+			"textures": "textures/items/runes/nova_rune"
+		},
+		"runes:plant": {
+			"textures": "textures/items/runes/plant_rune"
+		},
+		"runes:sand": {
+			"textures": "textures/items/runes/sand_rune"
+		},
+		"runes:shadow": {
+			"textures": "textures/items/runes/shadow_rune"
+		},
+		"runes:silk": {
+			"textures": "textures/items/runes/silk_rune"
+		},
+		"runes:smoke": {
+			"textures": "textures/items/runes/smoke_rune"
+		},
+		"runes:soul": {
+			"textures": "textures/items/runes/soul_rune"
+		},
+		"runes:sound": {
+			"textures": "textures/items/runes/sound_rune"
+		},
+		"runes:stone": {
+			"textures": "textures/items/runes/stone_rune"
+		},
+		"runes:time": {
+			"textures": "textures/items/runes/time_rune"
+		},
+		"runes:venom": {
+			"textures": "textures/items/runes/venom_rune"
+		},
+		"runes:wind": {
+			"textures": "textures/items/runes/wind_rune"
+		},
+		"runes_weapons:energy_sword": {
+			"textures": "textures/items/weapons/energy_sword"
+		},
+		"runes_weapons:energy_bow": {
+			"textures": "textures/items/weapons/energy_bow/energy_bow_standby"
+		},
+		"runes_weapons:energy_totem": {
+			"textures": "textures/items/weapons/energy_totem"
+		},
+		"armor:grand_widow_helmet": {
+			"textures": "textures/items/mansion_helmet_icon"
+		},
+		"armor:grand_widow_chestplate": {
+			"textures": "textures/items/mansion_chestplate_icon"
+		},
+		"armor:grand_widow_leggings": {
+			"textures": "textures/items/mansion_leggings_icon"
+		},
+		"armor:grand_widow_boots": {
+			"textures": "textures/items/mansion_boots_icon"
+		},
+		"armor:molten_knight_helmet": {
+			"textures": "textures/items/molten_knight_helmet_icon"
+		},
+		"armor:molten_knight_chestplate": {
+			"textures": "textures/items/molten_knight_chestplate_icon"
+		},
+		"armor:molten_knight_leggings": {
+			"textures": "textures/items/molten_knight_leggings_icon"
+		},
+		"armor:molten_knight_boots": {
+			"textures": "textures/items/molten_knight_boots_icon"
+		},
+		"weapons:crescent_rose": {
+			"textures": "textures/items/weapons/crescent_rose"
+		}
+	}
+}
