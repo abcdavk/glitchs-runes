@@ -642,6 +642,18 @@
 					]
 				}
 			}
+			// "default_player": {
+			// 	"add": {
+			// 		"component_groups": [
+			// 			"minecraft:default_player"
+			// 		]
+			// 	},
+			// 	"remove": {
+			// 		"component_groups": [
+			// 			"armor:molten_knight"
+			// 		]
+			// 	}
+			// }
 		}
 	}
 }

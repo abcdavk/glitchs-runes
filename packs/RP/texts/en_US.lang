@@ -34,6 +34,9 @@ item.runes_weapons:energy_totem=Energy Totem
 item.weapons:crescent_rose=Crescent Rose
 item.weapons:ignition_gauntlet=Ignition Gauntlet
 item.weapons:vortex_gauntlet=Vortex Gauntlet
+item.weapons:dismantel_gauntlet=Dismantel Gauntlet
+
+item.kit:copper_pda=Copper PDA
 
 item.spawn_egg.entity.runes:fungus_mushroom.name=Spawn Fungus Mushroom
 entity.runes:fungus_mushroom.name=Fungus Mushroom

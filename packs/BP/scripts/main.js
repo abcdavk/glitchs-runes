@@ -5,6 +5,7 @@ import "./crescent_rose"
 import "./ignition_gauntlet"
 import "./vortex_gauntlet"
 import "./dismantel_gauntlet"
+import "./copper_pda"
 
 const runes = ItemTypes.getAll()
 	.filter(i => i.id.startsWith("runes:"))

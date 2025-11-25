@@ -78,8 +78,9 @@ world.afterEvents.worldInitialize.subscribe(() => {
     world.afterEvents.entityDie.subscribe(({ deadEntity: player }) => {
         if (!player.hasTag("has_full_molten_knight")) return
 
-        player.dimension.createExplosion(player.location, 5, { breaksBlocks: false })
+        player.dimension.createExplosion(player.location, 8, { source: player, allowUnderwater: true })
 
+        world.sendMessage("§cHealth: Depleted");
         player.removeTag("has_full_molten_knight")
     }, { entityTypes: ["minecraft:player"] })
 
@@ -114,7 +115,7 @@ world.afterEvents.worldInitialize.subscribe(() => {
                     // player.runCommand("playsound boss_theme")
                     player.dimension.spawnEntity("minecraft:lightning_bolt", player.location)
                     player.getComponent("minecraft:health").setCurrentValue(player.getComponent("minecraft:health").currentValue+40);
-                    player.healthLevel = 3;
+                    player.healthLevel = 4;
                 }
                 let location = player.location
                 const view = player.getViewDirection()
@@ -129,20 +130,18 @@ world.afterEvents.worldInitialize.subscribe(() => {
                 player.addEffect("minecraft:strength", 20000000, { amplifier: 2, showParticles: false })
                 player.addEffect("minecraft:fire_resistance", 20000000, { amplifier: 1, showParticles: false })
                 if (player.healthLevel === undefined) {
-                    player.healthLevel = 3;
+                    player.healthLevel = 4;
                 }
 
-                if (playerHealth <= 2 && player.healthLevel === 1) {
-                    world.sendMessage("§cHealth: Depleted");
-                    player.healthLevel = 0;
-
-                } else if (playerHealth <= 20 && player.healthLevel === 2) {
+                if (playerHealth <= 20 && player.healthLevel === 2) {
                     world.sendMessage("§6Health: Critical");
                     player.healthLevel = 1;
 
                 } else if (playerHealth <= 40 && player.healthLevel === 3) {
                     world.sendMessage("§eHealth: Moderate");
                     player.healthLevel = 2;
+                } else if (playerHealth <= 60 && player.healthLevel === 4) {
+                    player.healthLevel = 3;
                 }
                 if (player.isJumping) {
                     if (player.cooldownJumpTicks > 0) {
@@ -246,7 +245,6 @@ world.afterEvents.worldInitialize.subscribe(() => {
                 player.removeEffect("minecraft:strength")
                 player.removeEffect("minecraft:fire_resistance")
                 player.removeTag("has_full_molten_knight")
-                player.triggerEvent("default_player")
                 player.removeTag("has_molten_send_message")
             }
         })

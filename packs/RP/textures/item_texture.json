@@ -121,6 +121,9 @@
 		},
 		"weapons:dismantel_gauntlet": {
 			"textures": "textures/items/weapons/dismantel_gauntlet"
+		},
+		"kit:copper_pda": {
+			"textures": "textures/items/copper_pda"
 		}
 	}
 }
