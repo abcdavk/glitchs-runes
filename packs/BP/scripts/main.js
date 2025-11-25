@@ -2,6 +2,9 @@ import { ItemTypes, system, world } from '@minecraft/server'
 import "./grand_widow_armor"
 import "./molten_knight_armor"
 import "./crescent_rose"
+import "./ignition_gauntlet"
+import "./vortex_gauntlet"
+import "./dismantel_gauntlet"
 
 const runes = ItemTypes.getAll()
 	.filter(i => i.id.startsWith("runes:"))

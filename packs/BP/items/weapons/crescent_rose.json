@@ -1,5 +1,5 @@
 {
-	"format_version": "1.21.50",
+	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
 			"identifier": "weapons:crescent_rose",
@@ -35,9 +35,9 @@
 				"category": "crescent_rose_ability",
 				"duration": 1
 			},
-			"minecraft:custom_components": [
-				"weapons:crescent_rose"
-			],
+			// "minecraft:custom_components": [
+			// 	"weapons:crescent_rose"
+			// ],
 			"minecraft:tags": {
 				"tags": [
 					"minecraft:is_sword",

@@ -353,6 +353,16 @@
 						"cause": "fall",
 						"deals_damage": false
 					}
+				},
+				"minecraft:health": {
+					"value": 60,
+					"max": 60
+				}
+			},
+			"armor:default_health": {
+				"minecraft:health": {
+					"value": 20,
+					"max": 20
 				}
 			}
 		},
@@ -609,6 +619,11 @@
 				}
 			},
 			"armor:add_molten_knight": {
+				"remove": {
+					"component_groups": [
+						"armor:default_health"
+					]
+				},
 				"add": {
 					"component_groups": [
 						"armor:molten_knight"
@@ -616,6 +631,11 @@
 				}
 			},
 			"armor:remove_molten_knight": {
+				"add": {
+					"component_groups": [
+						"armor:default_health"
+					]
+				},
 				"remove": {
 					"component_groups": [
 						"armor:molten_knight"

@@ -32,6 +32,8 @@ item.runes_weapons:energy_bow=Energy Bow
 item.runes_weapons:energy_totem=Energy Totem
 
 item.weapons:crescent_rose=Crescent Rose
+item.weapons:ignition_gauntlet=Ignition Gauntlet
+item.weapons:vortex_gauntlet=Vortex Gauntlet
 
 item.spawn_egg.entity.runes:fungus_mushroom.name=Spawn Fungus Mushroom
 entity.runes:fungus_mushroom.name=Fungus Mushroom

@@ -112,6 +112,15 @@
 		},
 		"weapons:crescent_rose": {
 			"textures": "textures/items/weapons/crescent_rose"
+		},
+		"weapons:ignition_gauntlet": {
+			"textures": "textures/items/weapons/ignition_gauntlet"
+		},
+		"weapons:vortex_gauntlet": {
+			"textures": "textures/items/weapons/vortex_gauntlet/vortex_gauntlet_standby"
+		},
+		"weapons:dismantel_gauntlet": {
+			"textures": "textures/items/weapons/dismantel_gauntlet"
 		}
 	}
 }
