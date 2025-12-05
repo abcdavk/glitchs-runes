@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.copper_saber.hold1st": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [433.01326, 66.82801, -94.4729],
+					"position": [0, 15, 0]
+				}
+			}
+		},
+		"animation.copper_saber.hold3rd": {
+			"loop": true,
+			"bones": {
+				"root_item": {  
+					"rotation": [87.5, 0, 0],
+					"position": [0, 17.4, 1]
+				}
+			}
+		}
+	}
+}

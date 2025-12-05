@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.copper_cannon.hold1st": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"rotation": [63.72759, 64.27586, 315.45239],
+					"position": [-2, 10, -10]
+				}
+			}
+		},
+		"animation.copper_cannon.hold3rd": {
+			"loop": true,
+			"bones": {
+				"root_item": {
+					"position": [0, 11, -14]
+				}
+			}
+		}
+	}
+}

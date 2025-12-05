@@ -1,4 +1,4 @@
-import { EntityComponentTypes, Player, world } from "@minecraft/server";
+import { EntityComponentTypes, ItemStack, Player, world } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui"
 
 function getCopperAmount(player) {
@@ -52,49 +52,54 @@ function showControlPanel() {
 
 const copperShopList = [
     {
-        item: "copper_chainsaw",
+        item: "weapons:copper_chainsaw",
         title: "Copper Chainsaw",
         cost: 256
     },
     {
-        item: "copper_cannon",
+        item: "weapons:copper_cannon",
         title: "Copper Cannon",
         cost: 256
     },
     {
-        item: "copper_saber",
+        item: "weapons:copper_saber",
         title: "Copper Saber",
         cost: 320
     },
     {
-        item: "copper_blaster",
+        item: "weapons:copper_blaster",
         title: "Copper Blaster",
         cost: 320
     },
     {
-        item: "statue_kit",
+        item: "weapons:statue_kit",
         title: "Statue Kit",
         cost: 64
     },
     {
-        item: "swordsmachine_kit",
+        item: "weapons:swordsmachine_kit",
         title: "Swordsmachine Kit",
         cost: 128
     },
     {
-        item: "drone_kit",
+        item: "weapons:drone_kit",
         title: "Drone Kit",
         cost: 32
     },
     {
-        item: "golem_kit",
+        item: "weapons:golem_kit",
         title: "Golem Kit",
         cost: 640
     }
 ]
 
+function removeCopper(player, cost) {
+    player.runCommand(`clear @s copper_ingot 0 ${cost}`)
+}
+
 function showShop(player) {
     const countCopper = getCopperAmount(player);
+    const dimension = player.dimension
 
     const form = new ActionFormData()
         .title("Copper PDA - Shop")
@@ -119,8 +124,8 @@ function showShop(player) {
             return;
         }
 
-        // removeCopper(player, shopItem.cost); 
-        // giveItem(player, shopItem.itemId, shopItem.amount || 1);
+        removeCopper(player, shopItem.cost); 
+        dimension.spawnItem(new ItemStack(shopItem.item, 1), player.location)
 
         player.sendMessage(`§aPurchased §r${shopItem.title}§a for ${shopItem.cost} copper!`);
     });

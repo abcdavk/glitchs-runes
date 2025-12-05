@@ -124,6 +124,17 @@
 		},
 		"kit:copper_pda": {
 			"textures": "textures/items/copper_pda"
+		},
+
+		
+		"weapons:copper_chainsaw": {
+			"textures": "textures/items/weapons/copper_chainsaw"
+		},
+		"weapons:copper_saber": {
+			"textures": "textures/items/weapons/copper_saber"
+		},
+		"weapons:copper_cannon": {
+			"textures": "textures/items/weapons/copper_cannon"
 		}
 	}
 }
